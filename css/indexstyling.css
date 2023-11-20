@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .navbar-brand:hover {
+    color: #652cb3;
+  }
+
+  .nav-link2 {
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0.2rem solid transparent;
+  }
+  .nav-link2:hover {
+    color: rgb(255, 153, 0);
+    border-bottom: 2px solid rgb(255, 153, 0);
+  }
+  .navbar-nav .nav-link2.active,
+  .navbar-nav .nav-link2.show {
+    color: rgb(255, 153, 0);
+    border-bottom: 0.2rem solid rgb(255, 153, 0);
+  }
+
+  .pur_color {
+    color: #6317ce;
+  }
+
+/* carousel start  */
+.carousel-item{
+    height: 78vh;
+    min-height: 30rem;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 10.25rem;
+    left: 10%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: left;
+  }
+   .carousel-caption h5{
+    font-size: 2rem;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-top: 2.5rem;
+    font-weight: 900;
+  }
+  .carousel-caption p{
+    font-size: 1.8rem;
+    margin: auto;
+    width: 60%;
+    line-height: 1.9;
+  }
+  
+  .carousel-caption a{
+    text-transform: uppercase;
+    background: darkorange;
+    padding: .3rem .2rem;
+    display: inline-block;
+    color: #fff;
+    margin-top: 1.5rem;
+    border-radius: 5rem;
+  
+  }
+  @media(max-height: 490px){
+    .carousel-caption{
+    bottom: 8rem;
+  }
+  }
+  @media(max-height: 360px){
+    .carousel-caption{
+    bottom: 5rem;
+  }
+  }
+/* $carousel-transition-duration: .6s; */
+
+/* carousel end  */
+
+
+/* our courses  */
+.container-fluid {
+    display: flex;
+}
+.pop_cour{
+  font-weight:900;
+  color:#652CB3;
+  margin:1rem 2rem;
+
+}
+
+.sidebar {
+    width: 20%;
+    height:100%;
+    color: #fff;
+    box-sizing: border-box;
+
+
+}
+.sidebar #categories{
+  max-height:100%;
+  padding: .4rem .7rem;
+
+  border:3px solid #652CB3;
+  background:white;
+
+}
+.sidebar li{
+  list-style: none;
+  cursor: pointer;
+  display:flex;
+/* border:1px solid red; */
+  justify-content:space-between;
+  color:black;
+  font-weight:600;
+  padding: .3rem;
+  margin: 0.9rem 0rem ;
+
+}
+.sidebar li:hover{
+  background:#652CB3;
+  color:white;
+  transition: .4s;
+
+    transform: scale(1.05);
+}
+.scroll_div{
+  width: 80%;
+ /* background:yellow; */
+  border:2px solid #652CB3;
+  height: 30.28rem;
+  overflow:hidden;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar{
+  width:10px;
+  border:1px solid black;
+}
+::-webkit-scrollbar-thumb{
+  background:#652cB3;
+  border-radius:10px;
+}
+
+.btn_Exp{
+width: 100%;
+background:white;
+font-weight:600;
+border:1px solid black;
+margin:0rem auto;
+padding:.3rem;
+color:black;
+/* border:none; */
+}
+.categories_header{
+  color:black;
+  font-size:1rem;
+  text-align:center;
+}
+.course-container {
+    width: 100%;
+    /* border:2px solid #652CB3;
+    background:#652CB3; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+.course-card {
+    width: 250px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+  background-color:#652cB3;
+  color:#fff;
+  transition:.4s;
+    transform: scale(1.05);
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.course-card .course-info {
+    padding: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .course-container {
+        width: 100%;
+    }
+    .scroll_div{
+      width: 100%
+    }
+}
