@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+.pur_color {
+  color: #6317ce;
+}
 .navbar-brand {
     font-weight: 900;
     font-size: 1.5rem;
@@ -30,9 +32,7 @@
     border-bottom: 0.2rem solid rgb(255, 153, 0);
   }
 
-  .pur_color {
-    color: #6317ce;
-  }
+ 
 
 /* carousel start  */
 .carousel-item{
@@ -47,7 +47,7 @@
     left: 10%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-    color: #fff;
+    color: #201f1f;
     text-align: left;
   }
    .carousel-caption h5{
@@ -60,8 +60,8 @@
   }
   .carousel-caption p{
     font-size: 1.8rem;
-    margin: auto;
-    width: 60%;
+    /* margin: auto; */
+    width: 50%;
     line-height: 1.9;
   }
   
@@ -221,4 +221,44 @@ color:black;
     .scroll_div{
       width: 100%
     }
+}
+
+
+
+/* footer styling start  */
+
+#footer ul li{
+  list-style: none;
+  
+
+}
+
+.ft_contact_us ul li{
+  /* background: red; */
+  margin: .6rem 0;
+  
+}
+.ft_head{
+  color: black;
+  /* background: #ff5e14; */
+  text-align: left;
+}
+
+.ft_link li{
+  margin: 1.3rem 0;
+}
+.ft_link li a{
+  
+  font-size: 1.2rem;
+  padding: .5rem;
+  border-bottom:2px solid transparent ;
+}
+.ft_link li a:hover{
+  color: #ff5e14;
+  border-bottom: 2px solid #ff5e14;
+  transition: .5s;
+}
+.ft_logo{
+  color: #ff5e14;
+  margin: 1.5rem;
 }
