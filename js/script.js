@@ -84,3 +84,20 @@ const courses = [
 
   // Initial display of all courses
   displayCourses(courses);
+
+
+
+
+
+
+
+
+
+
+
+  var typed = new Typed('.second_text', {
+    strings: ['Web Devlopment', 'Data Science', 'Stock Marketing', 'Game Developer'],
+    typeSpeed: 150,
+    backspeed: 150,
+    loop: true
+  });
