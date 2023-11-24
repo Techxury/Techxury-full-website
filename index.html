@@ -11,6 +11,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- icon cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
     <link rel="stylesheet" href="css/indexstyling.css" />
   </head>
   <body>
@@ -44,7 +50,7 @@
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ml-3">
                 <li class="nav-item">
                   <a
-                    class="pur_color nav-link nav-link2 active"
+                    class="pur_color nav-link nav-link2"
                     aria-current="page"
                     href="/"
                     >Home</a
@@ -67,10 +73,10 @@
                   <a class="pur_color nav-link nav-link2" href="#">More</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item btn_login_outer">
                   <button
                     type="button"
-                    class="btn btn-info"
+                    class="btn btn_login"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >
@@ -177,8 +183,10 @@
             <div class="carousel-caption d-md-block">
               <h5>Welcome to Techxury academy</h5>
               <span class="text_update first_text">We are Learn</span>
-              <span class="text_update second_text fw-bold"></span><br>
-              <button type="button" class="btn "><a href="#" class="cr_cont_btn">Explore now</a></button>
+              <span class="text_update second_text fw-bold"></span><br />
+              <button type="button" class="btn">
+                <a href="#" class="cr_cont_btn">Explore now</a>
+              </button>
             </div>
           </div>
           <div class="carousel-item">
@@ -190,8 +198,10 @@
             <div class="carousel-caption d-md-block">
               <h5>Our facult</h5>
               <!-- <span class="text_update first_text">Our facult</span> -->
-              <span class="text_update fw-bold">Manmohan Singh</span><br>
-              <button type="button" class="btn"><a href="#" class="cr_cont_btn">Explore now</a></button>
+              <span class="text_update fw-bold">Manmohan Singh</span><br />
+              <button type="button" class="btn">
+                <a href="#" class="cr_cont_btn">Explore now</a>
+              </button>
             </div>
           </div>
           <div class="carousel-item">
@@ -203,8 +213,10 @@
             <div class="carousel-caption d-md-block">
               <h5>True Word</h5>
               <span class="text_update first_text">Just fun with</span>
-              <span class="text_update  fw-bold">Coding</span><br>
-              <button type="button" class="btn"><a href="#" class="cr_cont_btn">Explore now</a></button>
+              <span class="text_update fw-bold">Coding</span><br />
+              <button type="button" class="btn">
+                <a href="#" class="cr_cont_btn">Explore now</a>
+              </button>
             </div>
           </div>
         </div>
@@ -229,7 +241,7 @@
       </div>
     </section>
 
-    <section>
+    <!-- <section>
       <header>
         <h1 class="pop_cour text-center">Popular Courses</h1>
       </header>
@@ -266,13 +278,245 @@
               Enterpenour <span><i class="bi bi-caret-right"></i></span>
             </li>
 
-            <!-- Add more categories as needed -->
-          </ul>
+             Add more categories as needed -->
+    <!-- </ul>
         </div>
 
         <div class="scroll_div">
           <div class="course-container" id="courseContainer">
-            <!-- Courses will be dynamically added here -->
+             Courses will be dynamically added here -->
+    <!-- </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- popular courses card  -->
+    <section>
+      <div class="container my-3">
+        <h2 class="text-center pur_color">Popular Courses</h2>
+        <span class="d-flex justify-content-end"
+          ><a href="" class="px-4 fw-bold pop_all_courses"
+            >See all courses</a
+          ></span
+        >
+        <div class="row text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <h5 class="text-center">Web Development</h5>
+            <div class="card scroll_div py-3 mx-auto" style="width: 18rem">
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <h5 class="text-center">Data Science</h5>
+            <div class="card scroll_div py-3 mx-auto" style="width: 18rem">
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+            <h5 class="text-center">Cyber Security</h5>
+            <div class="card scroll_div py-3 mx-auto" style="width: 18rem">
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-container" id="courseContainer">
+                <div class="course-card my-3">
+                  <img
+                    src="https://images.pexels.com/photos/12829984/pexels-photo-12829984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img"
+                  />
+                  <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloremque, deserunt.
+                    </p>
+                    <button class="btn_Exp">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -372,16 +616,10 @@
               >
             </div>
             <div>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
-                deleniti minus deserunt.
-              </p>
+              <p>Follow me on <span id="ft_fol_move"></span></p>
             </div>
 
             <div class="d-flex flex-column">
-              <div>
-                <h5>Follow us</h5>
-              </div>
               <div
                 class="d-flex justify-content-evenly"
                 style="min-width: 200px"
@@ -440,39 +678,43 @@
           >
             <!-- <h3 class="fw-bold">Usefull link</h3> -->
             <ul class="ft_link" style="padding-left: 0rem">
+              <h5 class="fw-bold text-decoration-underline ora_color">
+                Usefull link
+              </h5>
               <li>
                 <a href="/" class="text-decoration-none pur_color fw-bold"
-                  >Home</a
+                  ><i class="bi bi-house-door-fill ora_color ft_us_li"></i>
+                  Home</a
                 >
               </li>
               <li>
                 <a href="#" class="text-decoration-none pur_color fw-bold"
-                  >Courses</a
+                  ><i class="bi bi-book-fill ora_color ft_us_li"></i>Courses</a
                 >
               </li>
               <li>
                 <a href="#" class="text-decoration-none pur_color fw-bold"
-                  >Chat</a
+                  ><i class="bi bi-people-fill ora_color ft_us_li"></i>Group</a
                 >
               </li>
               <li>
                 <a href="#" class="text-decoration-none pur_color fw-bold"
-                  >Doubt</a
+                  ><i class="bi bi-chat-dots ora_color ft_us_li"></i>Doubt</a
                 >
               </li>
             </ul>
           </div>
         </div>
-        <hr />
-        <div class="row">
+
+        <!-- <div class="row m-0">
           <div class="ft_contact col-12 border-end col-sm-12 col-md-12 col-lg-4 ">
             <div class="d-flex justify-content-center">
               <div>
                 <a class="ft_logo" href="#"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
+                    width="30"
+                    height="30"
                     fill="currentColor"
                     class="bi bi-geo-alt-fill"
                     viewBox="0 0 16 16"
@@ -480,7 +722,7 @@
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/></svg></a>
               </div>
   
-              <div class="d-flex align-items-start flex-column justify-content-center">
+              <div class="d-flex align-items-start flex-column justify-content-center pt-3">
                 <h6 class="fw-bold">Find us</h6>
                 <p>Allu chowk, mars</p>
               </div>
@@ -493,8 +735,8 @@
                 <a class="ft_logo" href="#"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
+                    width="30"
+                    height="30"
                     fill="currentColor"
                     class="bi bi-telephone-fill"
                     viewBox="0 0 16 16"
@@ -507,7 +749,7 @@
               </div>
   
               <div
-                class="d-flex align-items-start flex-column justify-content-center"
+                class="d-flex align-items-start flex-column justify-content-center pt-3"
               >
                 <h6 class="fw-bold text-left">Call us</h6>
                 <p>+12345678</p>
@@ -521,8 +763,8 @@
                 <a class="ft_logo" href="#"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
+                    width="30"
+                    height="30"
                     fill="currentColor"
                     class="bi bi-envelope-fill"
                     viewBox="0 0 16 16"
@@ -534,23 +776,21 @@
               </div>
   
               <div
-                class="d-flex align-items-start flex-column justify-content-center"
+                class="d-flex align-items-start flex-column justify-content-center pt-3"
               >
                 <h6 class="fw-bold text-left">Email</h6>
                 <p>Googlebaba@gmail.com</p>
               </div>
             </div>
           </div>
-        </div>
-
-        <hr />
+        </div> -->
 
         <div class="row text-center">
           <div class="col-12">
             &#169; Copyright 2023, All Right Reserved
             <a href="/" class="pur_color fw-bold text-decoration-none"
-              >Techxury</a
-            >
+              >Techxury
+            </a>
           </div>
         </div>
       </div>
@@ -562,10 +802,9 @@
       crossorigin="anonymous"
     ></script>
 
-
     <!-- Type d script link  -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-       <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
