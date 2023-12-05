@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta title=""> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Techxury</title>
     <link
@@ -22,12 +23,12 @@
   <body>
     <section>
       <header>
-        <nav class="navbar navbar-expand-lg navbar_header shadow-lg">
+        <nav class="navbar navbar-expand-lg navbar_header">
           <div class="container">
             <a class="pur_color navbar-brand" href="/">
               <img
                 src="https://i.ibb.co/h8Jzw6H/final.png"
-                alt="Logo"
+                alt="tech Logo"
                 width="38"
                 height="35"
                 class="d-inline-block align-text-top"
@@ -50,14 +51,14 @@
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ml-3">
                 <li class="nav-item">
                   <a
-                    class="pur_color nav-link nav-link2"
+                    class="pur_color nav-link nav-link2 active"
                     aria-current="page"
                     href="/"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="pur_color nav-link nav-link2" href="/courses"
+                  <a class="pur_color nav-link nav-link2" href="/courses.html"
                     >Courses</a
                   >
                 </li>
@@ -70,7 +71,9 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="pur_color nav-link nav-link2" href="#">More</a>
+                  <a class="pur_color nav-link nav-link2" href="/profile.html"
+                    >profile page</a
+                  >
                 </li>
 
                 <li class="nav-item btn_login_outer">
@@ -175,11 +178,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="https://images.pexels.com/photos/40546/soldiers-military-attention-salute-40546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="d-block"
-              alt="..."
-            />
+            <img src="./img/cr1.webp" class="d-block" alt="..." />
             <div class="carousel-caption d-md-block">
               <h5>Welcome to Techxury academy</h5>
               <span class="text_update first_text">We are Learn</span>
@@ -190,11 +189,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="https://images.pexels.com/photos/12585804/pexels-photo-12585804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="d-block"
-              alt="..."
-            />
+            <img src="./img/cr2.webp" class="d-block" alt="..." />
             <div class="carousel-caption d-md-block">
               <h5>Our facult</h5>
               <!-- <span class="text_update first_text">Our facult</span> -->
@@ -205,11 +200,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="https://images.pexels.com/photos/4778621/pexels-photo-4778621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="d-block"
-              alt="..."
-            />
+            <img src="./img/cr3.webp" class="d-block" alt="..." />
             <div class="carousel-caption d-md-block">
               <h5>True Word</h5>
               <span class="text_update first_text">Just fun with</span>
@@ -241,55 +232,6 @@
       </div>
     </section>
 
-    <!-- <section>
-      <header>
-        <h1 class="pop_cour text-center">Popular Courses</h1>
-      </header>
-
-      <div class="container-fluid">
-        <div class="sidebar">
-          <ul id="categories">
-            <h5 class="categories_header">All courses and filter</h5>
-            <li onclick="filterCourses('all')">
-              All <span><i class="bi bi-caret-right"></i></span>
-            </li>
-            <li onclick="filterCourses('web')">
-              Web Development <span><i class="bi bi-caret-right"></i></span>
-            </li>
-            <li onclick="filterCourses('data')">
-              Data Science <span><i class="bi bi-caret-right"></i></span>
-            </li>
-            <li onclick="filterCourses('ai')">
-              AI <span><i class="bi bi-caret-right"></i></span>
-            </li>
-            <li onclick="filterCourses('cyber')">
-              Cyber Security <span><i class="bi bi-caret-right"></i></span>
-            </li>
-            <li onclick="filterCourses('app')">
-              App Development <span><i class="bi bi-caret-right"></i></span>
-            </li>
-            <li onclick="filterCourses('graphic')">
-              Graphic Designer <span><i class="bi bi-caret-right"></i></span>
-            </li>
-            <li onclick="filterCourses('game')">
-              Game Devloper <span><i class="bi bi-caret-right"></i></span>
-            </li>
-            <li onclick="filterCourses('ammer')">
-              Enterpenour <span><i class="bi bi-caret-right"></i></span>
-            </li>
-
-             Add more categories as needed -->
-    <!-- </ul>
-        </div>
-
-        <div class="scroll_div">
-          <div class="course-container" id="courseContainer">
-             Courses will be dynamically added here -->
-    <!-- </div>
-        </div>
-      </div>
-    </section> -->
-
     <!-- popular courses card  -->
     <section>
       <div class="container my-3">
@@ -301,7 +243,7 @@
         >
         <div class="row text-center">
           <div class="col-lg-4 col-md-6 col-sm-12 my-3">
-            <h5 class="text-center">Web Development</h5>
+            <h5 class="text-center white_color">Web Development</h5>
             <div class="card scroll_div py-3 mx-auto" style="width: 18rem">
               <div class="course-container" id="courseContainer">
                 <div class="course-card my-3">
@@ -374,7 +316,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12 my-3">
-            <h5 class="text-center">Data Science</h5>
+            <h5 class="text-center white_color">Data Science</h5>
             <div class="card scroll_div py-3 mx-auto" style="width: 18rem">
               <div class="course-container" id="courseContainer">
                 <div class="course-card my-3">
@@ -447,7 +389,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12 my-3">
-            <h5 class="text-center">Cyber Security</h5>
+            <h5 class="text-center white_color">Cyber Security</h5>
             <div class="card scroll_div py-3 mx-auto" style="width: 18rem">
               <div class="course-container" id="courseContainer">
                 <div class="course-card my-3">
@@ -526,23 +468,21 @@
       <div class="container text-center my-5">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 py-3">
-            <img
-              src="https://images.pexels.com/photos/18868007/pexels-photo-18868007/free-photo-of-black-and-white-photo-of-khadro-ling-buddhist-temple-tres-coroas-brazil.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="img-fluid"
-              alt="..."
-            />
+            <img src="./img/con1.webp" class="img-fluid" alt="..." />
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 justify-between py-3">
-            <h1>Techxury Intro</h1>
-            <p class="fs-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Distinctio, ipsum.
+            <h1 class="pur_color">Unleash the Power of Collaboration</h1>
+            <p class="white_color">
+              Elevate your learning experience with our innovative collaboration
+              feature. Connect seamlessly with peers, exchange ideas
+              effortlessly. Our platform fosters a supportive learning
+              community, allowing you to engage in group, share insights, and
+              enhance your skills collectively. Say goodbye to learning
+              alone—embrace the power of collaboration on your educational
+              journey.
             </p>
-            <p class="fs-6">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-              perspiciatis soluta ipsa quidem delectus voluptate.
-            </p>
-            <button type="button" class="btn btn-success">Success</button>
+
+            <!-- <button type="button" class="btn btn-success">Success</button> -->
           </div>
         </div>
       </div>
@@ -550,23 +490,21 @@
       <div class="container text-center my-5">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 justify-between py-3">
-            <h1>Techxury Intro</h1>
-            <p class="fs-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Distinctio, ipsum.
+            <h1 class="pur_color">Multi Level Doubt Solution</h1>
+            <p class="white_color">
+              "Navigate learning hurdles effortlessly with our Multi-Level Doubt
+              Solution. From instant quiz assistance to group discussions and
+              direct queries to course creators, we've got you covered at every
+              step. No more struggling alone—get clear, concise answers in a
+              variety of ways. Embrace the simplicity of our doubt solution
+              feature, making your learning journey smoother and more
+              enjoyable."
             </p>
-            <p class="fs-6">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-              perspiciatis soluta ipsa quidem delectus voluptate.
-            </p>
-            <button type="button" class="btn btn-success">Success</button>
+
+            <!-- <button type="button" class="btn btn-success">Success</button> -->
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 py-3">
-            <img
-              src="https://images.pexels.com/photos/18868007/pexels-photo-18868007/free-photo-of-black-and-white-photo-of-khadro-ling-buddhist-temple-tres-coroas-brazil.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="img-fluid"
-              alt="..."
-            />
+            <img src="./img/con2.webp" class="img-fluid" alt="..." />
           </div>
         </div>
       </div>
@@ -574,23 +512,20 @@
       <div class="container text-center my-5">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 py-3">
-            <img
-              src="https://images.pexels.com/photos/18868007/pexels-photo-18868007/free-photo-of-black-and-white-photo-of-khadro-ling-buddhist-temple-tres-coroas-brazil.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="img-fluid"
-              alt="..."
-            />
+            <img src="./img/con3.webp" class="img-fluid" alt="..." />
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-6 justify-between py-3">
-            <h1>Techxury Intro</h1>
-            <p class="fs-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Distinctio, ipsum.
+            <h1 class="pur_color">Join Us Today !</h1>
+            <p class="white_color">
+              "Embark on a transformative learning journey with TECHXURY today.
+              Elevate your skills, collaborate with peers, and unlock a world of
+              opportunities. Join our dynamic community to access cutting-edge
+              courses, engage in collaborative projects, and empower yourself
+              for success in the ever-evolving tech landscape. Your future
+              begins with TECHXURY."
             </p>
-            <p class="fs-6">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-              perspiciatis soluta ipsa quidem delectus voluptate.
-            </p>
-            <button type="button" class="btn btn-success">Success</button>
+           
+            <!-- <button type="button" class="btn btn-success">Success</button> -->
           </div>
         </div>
       </div>
@@ -616,7 +551,7 @@
               >
             </div>
             <div>
-              <p>Follow me on <span id="ft_fol_move"></span></p>
+              <p class="white_color">Follow me on <span id="ft_fol_move"></span></p>
             </div>
 
             <div class="d-flex flex-column">
@@ -786,7 +721,7 @@
         </div> -->
 
         <div class="row text-center">
-          <div class="col-12">
+          <div class="col-12 white_color">
             &#169; Copyright 2023, All Right Reserved
             <a href="/" class="pur_color fw-bold text-decoration-none"
               >Techxury
